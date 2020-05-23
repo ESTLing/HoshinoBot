@@ -50,15 +50,15 @@ async def nihaole(session):
 
 @sv.on_keyword(('确实', '有一说一', 'u1s1', 'yysy'))
 async def chat_queshi(bot, ctx):
-    if random.random() < 0.05:
-        await bot.send(ctx, R.img('确实.jpg').cqcode)
+    if random.random() < 0.2:
+        await bot.send(ctx, R.img('我觉得吧有一说一确实是这样的.jpg').cqcode)
 
 @sv.on_keyword(('会战', '刀'))
 async def chat_clanba(bot, ctx):
-    if random.random() < 0.03:
-        await bot.send(ctx, R.img('我的天啊你看看都几度了.jpg').cqcode)
+    if random.random() < 0.1:
+        await bot.send(ctx, R.img('我的天啊你看看都几点了.jpg').cqcode)
 
 @sv.on_keyword(('内鬼'))
 async def chat_neigui(bot, ctx):
-    if random.random() < 0.10:
+    if random.random() < 0.30:
         await bot.send(ctx, R.img('内鬼.png').cqcode)
